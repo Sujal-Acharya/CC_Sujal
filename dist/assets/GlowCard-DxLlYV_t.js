@@ -1,0 +1,1 @@
+import{j as a,m as r}from"./index-O3sfnluZ.js";const s=({children:i,className:o="",delay:t=0})=>a.jsx(r.div,{initial:{opacity:0,y:20},whileInView:{opacity:1,y:0},viewport:{once:!0},transition:{duration:.5,delay:t},className:`glow-card p-6 ${o}`,children:i});export{s as G};
