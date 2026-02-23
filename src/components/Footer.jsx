@@ -38,7 +38,7 @@ const Footer = () => {
             </div>
 
             <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-white/5 text-center text-text-secondary text-sm">
-                <p className="mb-2">© 2025 DebtFree. Not affiliated with any bank. Not financial advice. For educational purposes only.</p>
+                <p className="mb-2">© 2026 DebtFree. Not affiliated with any bank. Not financial advice. </p>
                 <p>100% Private. All calculations happen on your device.</p>
             </div>
         </footer>
@@ -46,3 +46,4 @@ const Footer = () => {
 }
 
 export default Footer
+
