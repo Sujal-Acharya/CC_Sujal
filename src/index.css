@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0A0A0F 0%, #1A0A2E 100%);
+  color: white;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+.bg-grid {
+  background-image: 
+    linear-gradient(rgba(123, 47, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(123, 47, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.purple-orb {
+  background: radial-gradient(circle, rgba(123, 47, 255, 0.15) 0%, transparent 70%);
+}
+
+.glow-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(123, 47, 255, 0.3);
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.glow-card:hover {
+  border-color: rgba(123, 47, 255, 0.6);
+  box-shadow: 0 0 20px rgba(123, 47, 255, 0.2);
+  transform: translateY(-4px);
+}
+
+.glow-btn {
+  background: #7B2FFF;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(123, 47, 255, 0.3);
+}
+
+.glow-btn:hover {
+  box-shadow: 0 0 25px rgba(123, 47, 255, 0.6);
+  transform: scale(1.02);
+}
+
+.ghost-btn {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.ghost-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.02);
+}
+
+.danger-glow {
+  border: 1px solid rgba(255, 68, 68, 0.4);
+  box-shadow: 0 0 20px rgba(255, 68, 68, 0.2);
+}
+
+.success-glow {
+  border: 1px solid rgba(0, 255, 136, 0.4);
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+}
+
+.pill-badge {
+  background: rgba(123, 47, 255, 0.1);
+  border: 1px solid rgba(123, 47, 255, 0.4);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  color: #A89EC9;
+}
+
+/* Page Transitions */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.page-transition-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.page-transition-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 300ms, transform 300ms;
+}
